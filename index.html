@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Survey</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            
+            <header class="text-center">
+               <h1 id="title">Survey Form.</h1>
+               <p id="description">Thank you for your time.</p>
+            </header>
+    
+        <form class=" text-center" id="survey-form">
+            <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+           <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name"
+           required>
+        </div>
+        <div class="form-group">
+           <label id="email-label" for="email">Email</label>
+           <input id="email" type="email" name="email" class="form-control" placeholder="Enter your email"
+           required>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input id="number"  type="number" name="Age" min="10"
+            max="99" class="form-control" placeholder="Enter your age"
+            required>
+
+        </div>
+        <div class="form-group">
+            <p>Question dropdown</p>
+            <select id="dropdown" name="option" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="Option-1">Option 1</option>
+                <option value="Option-2">Option 2</option>
+                <option value="Option-3">Option 3</option>
+                <option value="Option-4">Option 4</option>
+                <option value="Option-5">Option 5</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <p>Question radio</p>
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="Option-6"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                  />Choice 1</label>
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="Option-7"
+                    type="radio"
+                    class="input-radio"
+                  />Choice 2</label>
+          
+                <label ><input
+                    name="user-recommend"
+                    value="Option-8"
+                    type="radio"
+                    class="input-radio"
+                  />Choice 3</label>
+              </div>
+              <div class="form-group">
+              Question Checkbox.
+              <label>
+                  <input
+          name="prefer"
+          value="option-9"
+          type="checkbox"
+          class="input-checkbox"
+        />Option 9</label>
+      <label>
+        <input
+          name="prefer"
+          value="option-10"
+          type="checkbox"
+          class="input-checkbox"
+        />Option 10</label>
+      <label
+        ><input
+          name="prefer"
+          value="option-11"
+          type="checkbox"
+          class="input-checkbox"
+        />Option 11</label>
+      <label
+        ><input
+          name="prefer"
+          value="option-12"
+          type="checkbox"
+          class="input-checkbox"
+        />Option 12</label>
+      <label
+        ><input
+          name="prefer"
+          value="option-13"
+          type="checkbox"
+          class="input-checkbox"
+        />Option 13</label>
+         </div>
+         <div class="form-group">
+            <p>Comments</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+
+
+    
+        </div>
+
+
+    </body>
+    </html>
